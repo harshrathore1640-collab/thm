@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THM by Praviin Janngir | Premium Bespoke Wood Solutions & Millwork</title>
+    <meta name="description" content="Manufacturing of premium bespoke wood solutions — Millwork, Wall Paneling, Doors, and Furniture. Trusted by designers and discerning clients.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#141210',
+                        charcoal: '#1A1816',
+                        warmgold: '#D4AF37',
+                        goldlight: '#F3E5AB',
+                        darkpanel: '#201D1A',
+                        mutedstone: '#8C857B'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #141210;
+            color: #E5E0D8;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #141210;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #332E29;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        .gold-border-hover:hover {
+            border-color: #D4AF37;
+        }
+        .glass-nav {
+            background: rgba(20, 18, 16, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(20, 18, 16, 0.3) 0%, rgba(20, 18, 16, 0.8) 70%, #141210 100%);
+        }
+    </style>
+</head>
+<body class="bg-espresso text-stone-200 antialiased selection:bg-warmgold selection:text-espresso">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full border border-warmgold/60 flex items-center justify-center bg-espresso/80 group-hover:border-warmgold transition-colors">
+                    <span class="font-serif text-warmgold text-xl font-bold tracking-wider">THM</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg tracking-wider text-white font-semibold group-hover:text-warmgold transition-colors">THM</span>
+                    <span class="text-[10px] uppercase tracking-widest text-mutedstone font-sans">by Praviin Janngir</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-white hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">Home</a>
+                <a href="#about" class="text-stone-300 hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">About</a>
+                <a href="#services" class="text-stone-300 hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">Millwork & Services</a>
+                <a href="#portfolio" class="text-stone-300 hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">Portfolio</a>
+                <a href="#craftsmanship" class="text-stone-300 hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">Craftsmanship</a>
+                <a href="#contact" class="text-stone-300 hover:text-warmgold transition-colors py-1 border-b border-transparent hover:border-warmgold">Contact</a>
+            </nav>
+
+            <!-- Header Action CTAs -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://wa.me/9910100409?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20bespoke%20wood%20solutions." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-full border border-warmgold/50 text-warmgold text-xs font-semibold uppercase tracking-wider hover:bg-warmgold hover:text-espresso transition-all duration-300">
+                    <i class="fab fa-whatsapp text-sm"></i> WhatsApp Us
+                </a>
+                <a href="tel:9910100409" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-warmgold text-espresso text-xs font-semibold uppercase tracking-wider hover:bg-goldlight transition-all duration-300 shadow-lg shadow-warmgold/10">
+                    <i class="fas fa-phone-alt text-xs"></i> 9910100409
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-stone-200 hover:text-warmgold focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-charcoal/95 border-b border-white/10 px-6 py-6 space-y-4 backdrop-blur-xl">
+            <a href="#home" class="block text-white hover:text-warmgold text-base font-medium mobile-link">Home</a>
+            <a href="#about" class="block text-stone-300 hover:text-warmgold text-base font-medium mobile-link">About</a>
+            <a href="#services" class="block text-stone-300 hover:text-warmgold text-base font-medium mobile-link">Millwork & Services</a>
+            <a href="#portfolio" class="block text-stone-300 hover:text-warmgold text-base font-medium mobile-link">Portfolio</a>
+            <a href="#craftsmanship" class="block text-stone-300 hover:text-warmgold text-base font-medium mobile-link">Craftsmanship</a>
+            <a href="#contact" class="block text-stone-300 hover:text-warmgold text-base font-medium mobile-link">Contact</a>
+            <div class="pt-4 flex flex-col sm:flex-row gap-3 border-t border-white/10">
+                <a href="https://wa.me/9910100409?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20bespoke%20wood%20solutions." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-warmgold text-warmgold text-xs font-semibold uppercase tracking-wider">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="tel:9910100409" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-warmgold text-espresso text-xs font-semibold uppercase tracking-wider">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85" alt="Luxury bespoke wood interior" class="w-full h-full object-cover object-center scale-105 animate-pulse duration-[10000ms]" onerror="this.src='https://placehold.co/1920x1080/141210/D4AF37?text=THM+Bespoke+Woodwork'">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center my-auto py-20">
+            <!-- Verified Instagram badge callout -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-warmgold/30 backdrop-blur-md mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-warmgold animate-ping"></span>
+                <span class="text-xs uppercase tracking-widest text-warmgold font-semibold">@thm_by_praviin_janngir</span>
+                <span class="bg-blue-500 text-white text-[10px] px-1.5 py-0.5 rounded-full ml-1" title="Verified Profile"><i class="fas fa-check"></i></span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+                Bespoke Wood <span class="gold-gradient-text italic font-normal">Solutions</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-stone-300 font-light mb-10 leading-relaxed">
+                Exquisite Millwork · Architectural Wall Paneling · Statement Doors · Mastercrafted Furniture. Trusted by leading designers and discerning luxury clients worldwide.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full bg-warmgold text-espresso font-semibold text-sm uppercase tracking-widest hover:bg-goldlight transition-all duration-300 shadow-xl shadow-warmgold/20 flex items-center justify-center gap-3">
+                    <span>Explore Collections</span>
+                    <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+                <a href="https://wa.me/9910100409?text=Hello,%20I%20would%20like%20to%20discuss%20a%20bespoke%20woodwork%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full border border-warmgold/60 text-white font-semibold text-sm uppercase tracking-widest hover:bg-warmgold/10 hover:border-warmgold transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp text-warmgold text-lg"></i>
+                    <span>Enquire on WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-10 border-t border-white/10">
+                <div class="text-center">
+                    <div class="font-serif text-3xl sm:text-4xl font-bold text-warmgold mb-1">33.8K+</div>
+                    <div class="text-xs uppercase tracking-widest text-stone-400">Instagram Followers</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-serif text-3xl sm:text-4xl font-bold text-warmgold mb-1">100%</div>
+                    <div class="text-xs uppercase tracking-widest text-stone-400">Bespoke Precision</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-serif text-3xl sm:text-4xl font-bold text-warmgold mb-1">Architects</div>
+                    <div class="text-xs uppercase tracking-widest text-stone-400">& Designers Choice</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-serif text-3xl sm:text-4xl font-bold text-warmgold mb-1">Excellence</div>
+                    <div class="text-xs uppercase tracking-widest text-stone-400">Uncompromising Craft</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-charcoal relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Composition -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden border border-warmgold/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1545083061-af5936b08169?auto=format&fit=crop&w=1000&q=80" alt="Master craftsman working on wood" class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/800x1000/201D1A/D4AF37?text=Master+Woodcraft'">
+                    </div>
+                    <!-- Absolute Accent Box -->
+                    <div class="absolute -bottom-6 -right-6 hidden sm:block z-20 bg-espresso border border-warmgold/40 p-6 rounded-xl max-w-xs shadow-2xl">
+                        <div class="text-warmgold font-serif text-3xl font-bold mb-1">Master Artistry</div>
+                        <p class="text-xs text-stone-300 leading-relaxed">Elevating architectural spaces through uncompromising joinery, rich wood tones, and bespoke detailing.</p>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-6 lg:pl-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-warmgold/10 border border-warmgold/30 text-warmgold text-xs uppercase tracking-widest mb-4 font-semibold">
+                        About THM by Praviin Janngir
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+                        Crafting Luxury Wood Solutions for Distinguished Interiors
+                    </h2>
+                    <p class="text-stone-300 font-light leading-relaxed mb-6">
+                        Under the expert guidance of Praviin Janngir, THM has emerged as a premier destination for high-end architectural millwork and bespoke wood solutions. We specialize in transforming architectural visions into breathtaking wooden realities.
+                    </p>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed mb-8">
+                        Trusted by top-tier interior designers, architects, and discerning clients, our manufacturing atelier combines time-honored woodworking heritage with state-of-the-art precision engineering to deliver flawless wall paneling, grand doors, and custom furniture.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8 pt-4 border-t border-white/10">
+                        <div>
+                            <div class="flex items-center gap-2 text-warmgold font-semibold mb-1">
+                                <i class="fas fa-check-circle"></i> Architectural Millwork
+                            </div>
+                            <p class="text-xs text-stone-400">Custom crown moldings, cornices, and library units.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 text-warmgold font-semibold mb-1">
+                                <i class="fas fa-check-circle"></i> Wall Paneling
+                            </div>
+                            <p class="text-xs text-stone-400">Fluted wooden surfaces, veneers, and acoustic paneling.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <a href="#contact" class="px-7 py-3.5 rounded-full bg-warmgold text-espresso font-semibold text-xs uppercase tracking-widest hover:bg-goldlight transition-all duration-300">
+                            Book Consultation
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-warmgold/20 flex items-center justify-center text-warmgold">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase tracking-widest text-mutedstone block">Direct Line</span>
+                                <a href="tel:9910100409" class="text-white font-semibold hover:text-warmgold transition-colors text-sm">9910100409</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Collections Grid -->
+    <section id="services" class="py-24 bg-espresso relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-warmgold text-xs uppercase tracking-widest font-semibold mb-3 block">Our Specialization</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    Premium Wood Collections & Services
+                </h2>
+                <p class="text-stone-400 font-light">
+                    Explore our core manufacturing categories designed to meet the highest standards of luxury interior architecture.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: Millwork -->
+                <div class="group bg-darkpanel rounded-2xl overflow-hidden border border-white/10 hover:border-warmgold/60 transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Millwork" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/600x600/1A1816/D4AF37?text=Millwork'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-espresso/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-warmgold border border-warmgold/30">Category 01</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-warmgold transition-colors">Architectural Millwork</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed font-light mb-6 flex-grow">
+                            Custom wall units, libraries, decorative moldings, skirting, and intricate wooden ceiling designs crafted to perfection.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-warmgold uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                            <span>Enquire Now</span> <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Wall Paneling -->
+                <div class="group bg-darkpanel rounded-2xl overflow-hidden border border-white/10 hover:border-warmgold/60 transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Wall Paneling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/600x600/1A1816/D4AF37?text=Wall+Paneling'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-espresso/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-warmgold border border-warmgold/30">Category 02</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-warmgold transition-colors">Wall Paneling</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed font-light mb-6 flex-grow">
+                            Sophisticated fluted wood panels, veneered accent walls, and textured wooden surfaces that redefine luxury living spaces.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-warmgold uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                            <span>Enquire Now</span> <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Doors -->
+                <div class="group bg-darkpanel rounded-2xl overflow-hidden border border-white/10 hover:border-warmgold/60 transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=800&q=80" alt="Doors" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/600x600/1A1816/D4AF37?text=Doors'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-espresso/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-warmgold border border-warmgold/30">Category 03</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-warmgold transition-colors">Statement Doors</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed font-light mb-6 flex-grow">
+                            Grand pivot doors, full-height flush doors, and intricately carved wooden entryways engineered for acoustic comfort and style.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-warmgold uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                            <span>Enquire Now</span> <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Furniture -->
+                <div class="group bg-darkpanel rounded-2xl overflow-hidden border border-white/10 hover:border-warmgold/60 transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Furniture" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/600x600/1A1816/D4AF37?text=Furniture'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-espresso/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-warmgold border border-warmgold/30">Category 04</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-warmgold transition-colors">Bespoke Furniture</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed font-light mb-6 flex-grow">
+                            Custom-built wardrobes, luxury dining tables, vanity consoles, and architectural seating tailored to exact interior dimensions.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-warmgold uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                            <span>Enquire Now</span> <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section id="portfolio" class="py-24 bg-charcoal relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-warmgold text-xs uppercase tracking-widest font-semibold mb-3 block">Selected Works</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                        Architectural Woodcraft Showcase
+                    </h2>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="https://instagram.com/thm_by_praviin_janngir" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-warmgold font-semibold border-b border-warmgold pb-1 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-base"></i> View More on Instagram (@thm_by_praviin_janngir)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-darkpanel">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Room Wall Paneling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/800x600/141210/D4AF37?text=Living+Room+Paneling'">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/40 to-transparent opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-warmgold font-semibold mb-1 block">Wall Paneling & Millwork</span>
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Grand Residence Fluted Paneling</h3>
+                        <p class="text-xs text-stone-300 font-light mb-4">Precision-milled walnut panels creating depth and warmth in a luxury penthouse interior.</p>
+                        <a href="https://wa.me/9910100409?text=Hello,%20I%20am%20interested%20in%20similar%20Wall%20Paneling%20work." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-warmgold uppercase tracking-wider font-semibold">
+                            <span>Enquire Design</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-darkpanel">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Bespoke Master Bedroom Wardrobe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/800x600/141210/D4AF37?text=Master+Wardrobe'">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/40 to-transparent opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-warmgold font-semibold mb-1 block">Bespoke Furniture</span>
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Architectural Walk-In Wardrobe</h3>
+                        <p class="text-xs text-stone-300 font-light mb-4">Custom teak and glass wardrobe configuration with integrated warm LED illumination.</p>
+                        <a href="https://wa.me/9910100409?text=Hello,%20I%20am%20interested%20in%20Wardrobe%20solutions." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-warmgold uppercase tracking-wider font-semibold">
+                            <span>Enquire Design</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-darkpanel">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&w=800&q=80" alt="Statement Pivot Doors" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://placehold.co/800x600/141210/D4AF37?text=Statement+Doors'">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/40 to-transparent opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-warmgold font-semibold mb-1 block">Statement Doors</span>
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Full-Height Architectural Doors</h3>
+                        <p class="text-xs text-stone-300 font-light mb-4">Floor-to-ceiling bespoke veneer doors designed for seamless acoustic privacy.</p>
+                        <a href="https://wa.me/9910100409?text=Hello,%20I%20am%20interested%20in%20Statement%20Doors." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-warmgold uppercase tracking-wider font-semibold">
+                            <span>Enquire Design</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship & Process Section -->
+    <section id="craftsmanship" class="py-24 bg-espresso relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-warmgold text-xs uppercase tracking-widest font-semibold mb-3 block">Our Methodology</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    The Art of Bespoke Woodcraft
+                </h2>
+                <p class="text-stone-400 font-light">
+                    Every piece undergoes a rigorous, artisan-led journey from initial architectural blueprints to final pristine installation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 01 -->
+                <div class="bg-darkpanel p-8 rounded-2xl border border-white/10 relative group hover:border-warmgold transition-all duration-300">
+                    <span class="font-serif text-5xl font-bold text-warmgold/20 absolute top-4 right-6 group-hover:text-warmgold/40 transition-colors">01</span>
+                    <div class="w-12 h-12 rounded-xl bg-warmgold/10 flex items-center justify-center text-warmgold mb-6">
+                        <i class="fas fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Consultation</h3>
+                    <p class="text-stone-400 text-xs font-light leading-relaxed">
+                        We collaborate closely with designers and clients to understand functional needs, material preferences, and architectural aesthetic.
+                    </p>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="bg-darkpanel p-8 rounded-2xl border border-white/10 relative group hover:border-warmgold transition-all duration-300">
+                    <span class="font-serif text-5xl font-bold text-warmgold/20 absolute top-4 right-6 group-hover:text-warmgold/40 transition-colors">02</span>
+                    <div class="w-12 h-12 rounded-xl bg-warmgold/10 flex items-center justify-center text-warmgold mb-6">
+                        <i class="fas fa-drafting-compass text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Precision Design</h3>
+                    <p class="text-stone-400 text-xs font-light leading-relaxed">
+                        Detailed shop drawings, 3D renderings, and precise measurements are generated for flawless execution.
+                    </p>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="bg-darkpanel p-8 rounded-2xl border border-white/10 relative group hover:border-warmgold transition-all duration-300">
+                    <span class="font-serif text-5xl font-bold text-warmgold/20 absolute top-4 right-6 group-hover:text-warmgold/40 transition-colors">03</span>
+                    <div class="w-12 h-12 rounded-xl bg-warmgold/10 flex items-center justify-center text-warmgold mb-6">
+                        <i class="fas fa-hammer text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Handcrafting</h3>
+                    <p class="text-stone-400 text-xs font-light leading-relaxed">
+                        Master artisans utilize advanced joinery and hand-finishing techniques in our specialized manufacturing atelier.
+                    </p>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="bg-darkpanel p-8 rounded-2xl border border-white/10 relative group hover:border-warmgold transition-all duration-300">
+                    <span class="font-serif text-5xl font-bold text-warmgold/20 absolute top-4 right-6 group-hover:text-warmgold/40 transition-colors">04</span>
+                    <div class="w-12 h-12 rounded-xl bg-warmgold/10 flex items-center justify-center text-warmgold mb-6">
+                        <i class="fas fa-home text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Final Installation</h3>
+                    <p class="text-stone-400 text-xs font-light leading-relaxed">
+                        Expert installation team ensures seamless fit, superior finish, and absolute client satisfaction on site.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Enquiry Section -->
+    <section id="contact" class="py-24 bg-charcoal relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left Info -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-warmgold text-xs uppercase tracking-widest font-semibold mb-3 block">Get In Touch</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-6">
+                            Start Your Bespoke Wood Project
+                        </h2>
+                        <p class="text-stone-300 text-sm font-light leading-relaxed mb-8">
+                            Whether you are an architect, interior designer, or discerning homeowner, we invite you to discuss your custom millwork and woodwork requirements directly with Praviin Janngir's team.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-warmgold/10 border border-warmgold/30 flex items-center justify-center text-warmgold flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">Direct Call</span>
+                                    <a href="tel:9910100409" class="text-white font-semibold hover:text-warmgold text-lg transition-colors">+91 9910100409</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-warmgold/10 border border-warmgold/30 flex items-center justify-center text-warmgold flex-shrink-0">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">WhatsApp Instant Chat</span>
+                                    <a href="https://wa.me/9910100409?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20bespoke%20wood%20solutions." target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-warmgold text-lg transition-colors">+91 9910100409</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-warmgold/10 border border-warmgold/30 flex items-center justify-center text-warmgold flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">Email Enquiry</span>
+                                    <a href="mailto:lavilasita@gmail.com" class="text-white font-semibold hover:text-warmgold text-lg transition-colors">lavilasita@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-warmgold/10 border border-warmgold/30 flex items-center justify-center text-warmgold flex-shrink-0">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">Instagram Profile</span>
+                                    <a href="https://instagram.com/thm_by_praviin_janngir" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-warmgold text-lg transition-colors">@thm_by_praviin_janngir (33.8K)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="lg:col-span-7 bg-espresso p-8 sm:p-12 rounded-3xl border border-white/10 shadow-2xl relative">
+                    <h3 class="font-serif text-2xl font-bold text-white mb-2">Request a Consultation</h3>
+                    <p class="text-xs text-stone-400 mb-8 font-light">Fill out the details below and our team will get in touch with you promptly.</p>
+
+                    <form id="enquiry-form" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-stone-300 font-semibold mb-2">Your Name *</label>
+                                <input type="text" id="name" required class="w-full bg-darkpanel border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-warmgold transition-colors" placeholder="Enter your full name">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-stone-300 font-semibold mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full bg-darkpanel border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-warmgold transition-colors" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-stone-300 font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-darkpanel border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-warmgold transition-colors" placeholder="you@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-stone-300 font-semibold mb-2">Requirement Category</label>
+                            <select id="category" class="w-full bg-darkpanel border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-warmgold transition-colors">
+                                <option value="Millwork">Architectural Millwork</option>
+                                <option value="Wall Paneling">Wall Paneling</option>
+                                <option value="Doors">Statement Doors</option>
+                                <option value="Furniture">Bespoke Furniture</option>
+                                <option value="Complete Interior Woodwork">Complete Interior Woodwork</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-stone-300 font-semibold mb-2">Project Details / Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-darkpanel border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-warmgold transition-colors" placeholder="Tell us about your project dimensions, style, or specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-warmgold text-espresso font-semibold text-xs uppercase tracking-widest hover:bg-goldlight transition-all duration-300 shadow-xl shadow-warmgold/10">
+                            Submit Enquiry
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="success-box" class="hidden mt-6 p-6 rounded-xl bg-warmgold/10 border border-warmgold/40 text-center animate-fade-in">
+                        <div class="w-12 h-12 rounded-full bg-warmgold text-espresso flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-check text-lg"></i>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-white mb-1">Enquiry Sent Successfully!</h4>
+                        <p class="text-xs text-stone-300">Thank you. Praviin Janngir's team will contact you shortly via call or WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso border-t border-white/10 py-16 text-stone-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full border border-warmgold flex items-center justify-center bg-espresso">
+                            <span class="font-serif text-warmgold text-base font-bold">THM</span>
+                        </div>
+                        <span class="font-serif text-lg text-white font-semibold">THM</span>
+                    </div>
+                    <p class="text-xs font-light leading-relaxed mb-6">
+                        Manufacturing of premium bespoke wood solutions — Millwork, Wall Paneling, Doors, and Furniture. Trusted by designers and discerning clients.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="https://instagram.com/thm_by_praviin_janngir" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-darkpanel border border-white/10 flex items-center justify-center text-warmgold hover:border-warmgold transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/9910100409" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-darkpanel border border-white/10 flex items-center justify-center text-warmgold hover:border-warmgold transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:9910100409" class="w-10 h-10 rounded-full bg-darkpanel border border-white/10 flex items-center justify-center text-warmgold hover:border-warmgold transition-colors">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="font-serif text-white font-bold mb-4 uppercase text-xs tracking-widest text-warmgold">Quick Links</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="#home" class="hover:text-warmgold transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-warmgold transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Millwork & Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-warmgold transition-colors">Portfolio Showcase</a></li>
+                        <li><a href="#craftsmanship" class="hover:text-warmgold transition-colors">Craftsmanship Process</a></li>
+                        <li><a href="#contact" class="hover:text-warmgold transition-colors">Contact Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="font-serif text-white font-bold mb-4 uppercase text-xs tracking-widest text-warmgold">Specializations</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Architectural Millwork</a></li>
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Wall Paneling & Veneers</a></li>
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Statement Doors & Pivots</a></li>
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Bespoke Wardrobes & Furniture</a></li>
+                        <li><a href="#services" class="hover:text-warmgold transition-colors">Custom Designer Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="font-serif text-white font-bold mb-4 uppercase text-xs tracking-widest text-warmgold">Verified Contact</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-warmgold"></i>
+                            <a href="tel:9910100409" class="hover:text-warmgold">+91 9910100409</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-warmgold"></i>
+                            <a href="https://wa.me/9910100409" target="_blank" rel="noopener noreferrer" class="hover:text-warmgold">+91 9910100409</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-warmgold"></i>
+                            <a href="mailto:lavilasita@gmail.com" class="hover:text-warmgold">lavilasita@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fab fa-instagram text-warmgold"></i>
+                            <a href="https://instagram.com/thm_by_praviin_janngir" target="_blank" rel="noopener noreferrer" class="hover:text-warmgold">@thm_by_praviin_janngir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 THM by Praviin Janngir. All rights reserved. Verified Profile (33.8K Followers).</p>
+                <p class="mt-4 sm:mt-0">Crafted with precision for luxury wood solutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/9910100409?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20bespoke%20wood%20solutions." target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group relative" aria-label="WhatsApp Chat">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="absolute right-full mr-3 bg-charcoal text-white text-[10px] px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-white/10 pointer-events-none">WhatsApp Us</span>
+        </a>
+        <a href="tel:9910100409" class="w-14 h-14 rounded-full bg-warmgold text-espresso flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group relative" aria-label="Call Now">
+            <i class="fas fa-phone-alt text-xl"></i>
+            <span class="absolute right-full mr-3 bg-charcoal text-white text-[10px] px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-white/10 pointer-events-none">Call 9910100409</span>
+        </a>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-xl', 'bg-espresso/95');
+            } else {
+                navbar.classList.remove('shadow-xl', 'bg-espresso/95');
+            }
+        });
+
+        // Form Submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('enquiry-form');
+            const successBox = document.getElementById('success-box');
+            
+            // Hide form and show success box
+            form.style.display = 'none';
+            successBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
